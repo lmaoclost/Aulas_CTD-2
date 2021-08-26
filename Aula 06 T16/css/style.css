@@ -1,0 +1,30 @@
+body{
+  font-family: sans-serif;
+}
+
+header h1{
+  font-size: 45px;
+}
+
+header p{
+  color: rgba(77, 251, 46, 0.452);
+  font-size: 20px;
+}
+
+section{
+  background-color: blue;
+  color: green;
+  font-family: serif;
+}
+
+.fundo-azul{
+  background-color: blue;
+}
+
+.fundo-verm{
+  background-color: red;
+}
+
+.txt-branco{
+  color: white;
+}

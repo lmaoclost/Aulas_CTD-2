@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+#banner{
+  background-image: url(../img/spider.jpg);
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.banner-text{
+  background-color: rgba(255, 255, 255, 0.424);
+}

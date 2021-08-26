@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+#banner{
+  background-image: url(/img/vento.jpg);
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-text{
+  background-color: rgba(54, 56, 58, 0.513);
+}

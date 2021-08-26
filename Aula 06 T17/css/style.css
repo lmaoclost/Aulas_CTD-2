@@ -1,0 +1,29 @@
+body{
+  font-family: sans-serif;
+}
+
+header h1{
+  font-size: 45px;
+}
+
+section{
+  background-color: #0d169593;
+  color: rgb(1, 255, 22);
+}
+
+h2{
+  font-size: 35px;
+  color:gray;
+}
+
+.fundo-azul{
+  background-color: blue;
+}
+
+.fundo-azul h2{
+  color: white;
+}
+
+.txt-verm{
+  color: red;
+}
