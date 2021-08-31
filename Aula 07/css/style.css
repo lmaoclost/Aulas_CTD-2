@@ -1,0 +1,20 @@
+h1{
+  color: red;
+}
+
+#listagem li{
+  color: blue;
+}
+
+#listagem .recilene{
+  color: red;
+}
+
+#outros ~ p{
+  color: purple;
+}
+
+#outros p{
+  color: pink;
+}
+
