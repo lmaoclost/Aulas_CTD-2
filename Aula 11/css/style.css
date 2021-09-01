@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  position: sticky;
+  top: 0;
+  background-color: black;
+  color: white;
+}
+
+#banner{
+  background-image: url(../img/teioso.jpg);
+  background-size: cover;
+  text-align: center;
+  padding: 350px 35px 350px 35px;
+}
+
+.text-banner{
+  background-color: rgba(255, 255, 255, 0.452);
+}
+
+.relative{
+  position: relative;
+}
+
+.whatsapp{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+}
+
+img{
+  width: 100px;
+  position: absolute;
+}
+
+.teioso{
+  z-index: 1;
+}
