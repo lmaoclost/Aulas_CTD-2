@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Aula 13</title>
+</head>
+
+<body>
+  <main class="container">
+    <section>
+      <img src="https://loja704.com.br/storage/customer/586/logo/gSwY2KPzspxRjdA3H2zYlRAHDBgzW6syWFsQsN9j.png"
+        alt="Logo do iFome">
+      <h2>Eu como tudo isso!</h2>
+    </section>
+    <form action="#" method="POST">
+      <fieldset>
+        <legend>Dados Pessoais: </legend>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" placeholder="Insira seu email" required>
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" id="nome">
+
+        <label for="endereco">Endereço: </label>
+        <textarea name="endereco" id="endereco" cols="22" rows="5"></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Escolha seu lanche: </legend>
+        <select name="lanches" id="lanches">
+          <option value="">Escolha uma opção</option>
+          <optgroup label="Lanchos">
+            <option value="acaraje">Acarajé</option>
+            <option value="bomba">Bomba</option>
+            <option value="x-caboquinho">X-Caboquinho</option>
+            <option value="mc favela">MC Favela</option>
+          </optgroup>
+          <optgroup label="Drinks">
+            <option value="cupuacu">Suco de Cupuaçú</option>
+            <option value="guarana jesus">Guarana Jesus</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Método de Pagamento</legend>
+        <div class="metodoPagamento">
+          <input type="radio" name="pagamento" id="dinheiro" checked>
+          <label for="dinheiro">Dinheiro</label>
+          <input type="radio" name="pagamento" id="credito">
+          <label for="credito">Crédito</label>
+          <input type="radio" name="pagamento" id="debito">
+          <label for="debito">Débito</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Opcionais:</legend>
+        <div class="opcionais">
+          <input type="checkbox" name="colher" id="colher">
+          <label for="colher">Colher</label>
+          <input type="checkbox" name="garfo" id="garfo">
+          <label for="garfo">Garfo</label>
+          <input type="checkbox" name="hashi" id="hashi">
+          <label for="hashi">Hashi</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Agendar para quando?</legend>
+        <input type="datetime-local" name="data" id="data">
+      </fieldset>
+      <button type="submit">Pedir</button>
+      <button type="reset">Cancelar</button>
+    </form>
+  </main>
+</body>
+
+</html>
