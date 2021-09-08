@@ -9,7 +9,7 @@
 body{
   font-family: 'Poppins', sans-serif;
   color: white;
-  background-color: #ff2800;
+  background-color: #ee0e29;
 }
 
 main{
@@ -17,16 +17,15 @@ main{
 }
 
 main img{
-  width: 200px;
+  width: 150px;
 }
 
-label, option, select{
+label, select{
   display: block;
 }
 
 input, textarea{
   margin-bottom: 15px;
-  resize: none;
 }
 
 select{
