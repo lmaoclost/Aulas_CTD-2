@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background-color: #ee0e29;
+}
+
+main{
+  text-align: center;
+}
+
+.container{
+  padding: 0 30%;
+}
+
+main img{
+  width: 150px;
+  transition: all 0.5s ease-in-out;
+}
+
+main img:hover{
+  filter: saturate(0);
+}
+
+h2::after{
+  content: ' como tudo isso!';
+}
+
+h2::first-letter{
+  color: blue;
+}
+
+label, select{
+  display: block;
+}
+
+input, textarea{
+  margin-bottom: 15px;
+}
+
+input{
+  transition: all 0.5s ease-in-out;
+}
+
+input[type="email"]:hover{
+  background-color: rgba(0, 0, 255, 0.5);
+}
+
+input:disabled{
+  background-color: yellow;
+}
+
+textarea{
+  transition: all 0.5s ease-in-out;
+}
+
+textarea:hover{
+  background-color: purple;
+}
+
+textarea:focus{
+  background-color: yellow;
+}
+
+select{
+  margin: 0px auto 15px;
+}
+
+.metodoPagamento label, .opcionais label{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+input label{
+  color: green;
+}
+
+button{
+  margin: 3% 0;
+}
+
+fieldset:nth-child(1){
+  background:#ff0000;
+}
+
+fieldset:nth-child(3){
+  background:#0000ff;
+}
+
+fieldset:nth-child(4){
+  background:#00ff00;
+}
+
+fieldset:last-of-type{
+  background: #ffa500;
+}
