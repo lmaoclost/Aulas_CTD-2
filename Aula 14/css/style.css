@@ -17,7 +17,7 @@ main{
 }
 
 .container{
-  padding: 0 35%;
+  padding: 0 30%;
 }
 
 main img{
@@ -38,10 +38,7 @@ select{
 
 .metodoPagamento label, .opcionais label{
   display: inline-block;
-}
-
-label{
-  margin: 0px 10px 0 0;
+  margin-right: 10px;
 }
 
 button{
