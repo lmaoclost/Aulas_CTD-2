@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding: 30px;
+}
+
+body{
+  background-color: #131010;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* menu superior */
+
+header{
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  background-color: black;
+  z-index: 1;
+}
+
+h1, h2, h3{
+  color: white;
+  font-size: 30px;
+  font-family: 'Manrope', sans-serif;
+  text-align: center;
+}
+
+header h1::first-letter{
+  color: red;
+}
+
+header a{
+  color: white;
+  font-family: 'Manrope', sans-serif;
+  padding: 10px 30px;
+  border-radius: 9px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+header a:hover{
+  background-color: red;
+  color: black;
+}
+
+ul{
+  display: flex;
+}
+
+ul li{
+  margin-left: 4px;
+}
+
+ul li a{
+  padding: 10px;
+}
