@@ -1,65 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style-type: none;
-  text-decoration: none;
-  scroll-behavior: smooth;
-  scroll-padding: 30px;
 }
 
 body{
-  background-color: #131010;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Manrope', sans-serif;
 }
-
-/* menu superior */
 
 header{
   display: flex;
-  position: sticky;
-  top: 0;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
   flex-wrap: wrap;
+  position: sticky;
+  top: 0;
   background-color: black;
-  z-index: 1;
+  color: white;
+  padding: 20px;
 }
 
-h1, h2, h3{
-  color: white;
+h1{
   font-size: 30px;
-  font-family: 'Manrope', sans-serif;
-  text-align: center;
 }
 
 header h1::first-letter{
   color: red;
 }
 
-header a{
-  color: white;
-  font-family: 'Manrope', sans-serif;
-  padding: 10px 30px;
-  border-radius: 9px;
-  font-weight: bold;
-  transition: all 0.3s ease-in-out;
-}
-
-header a:hover{
-  background-color: red;
-  color: black;
-}
-
-ul{
+header ul{
   display: flex;
 }
 
-ul li{
+header ul li{
   margin-left: 4px;
+  list-style-type: none;
 }
 
-ul li a{
+header li a{
+  text-decoration: none;
+  color: white;
   padding: 10px;
+  border-radius: 9px;
+  font-weight: bold;
+  transition: all .3s ease-in-out;
+}
+
+header li a:hover{
+  background-color: red;
+  color: black;
 }
