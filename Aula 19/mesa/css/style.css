@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Manrope', sans-serif;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+h1{
+  font-size: 30px;
+}
+
+header h1::first-letter{
+  color: red;
+}
+
+header ul{
+  display: flex;
+}
+
+header ul li{
+  margin-left: 4px;
+  list-style-type: none;
+}
+
+header li a{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 9px;
+  font-weight: bold;
+  transition: all .3s ease-in-out;
+}
+
+header li a:hover{
+  background-color: red;
+  color: black;
+}
+
+#listaFilmes{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0 15px;
+}
+
+.filme{
+  width: 300px;
+  margin: 15px 0;
+}
+
+.filme img{
+  width: 100%;
+}
