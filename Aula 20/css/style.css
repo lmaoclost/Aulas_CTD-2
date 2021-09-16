@@ -28,6 +28,7 @@ h1{
 
 h2, h3{
   text-align: center;
+  padding: 15px 0;
 }
 
 h1::first-letter{
@@ -58,11 +59,6 @@ header li a:hover{
 }
 
 main{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 30px;
   padding: 15px 60px;
 }
 
@@ -70,7 +66,6 @@ main{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
-  margin-top: 40px;
   text-align: center;
 }
 
@@ -84,8 +79,9 @@ main{
 .image-container{
   height: 350px;
   width: 100%;
+  border: 10px groove lightgray;
+  border-radius: 15px;
   overflow: hidden;
-  border: 1px solid lightgray;
 }
 
 .card-game img:hover{
@@ -93,7 +89,6 @@ main{
 }
 
 .btn{
-  margin-top: 30px;
   padding: 10px 90px;
   font-weight: bold;
   border-radius: 9px;
@@ -108,5 +103,5 @@ main{
 }
 
 #rpg + #rts{
-  margin-top: 80px;
+  margin-top: 60px;
 }
