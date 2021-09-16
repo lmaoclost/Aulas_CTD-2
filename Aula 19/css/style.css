@@ -17,7 +17,7 @@ header{
   flex-wrap: wrap;
   position: sticky;
   top: 0;
-  background-color: black;
+  background: black;
   color: white;
   padding: 20px;
 }
@@ -26,16 +26,16 @@ h1{
   font-size: 30px;
 }
 
-header h1::first-letter{
+h1::first-letter{
   color: red;
 }
 
 header ul{
   display: flex;
+  gap: 5px;
 }
 
 header ul li{
-  margin-left: 4px;
   list-style-type: none;
 }
 
