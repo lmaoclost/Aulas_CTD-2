@@ -26,6 +26,10 @@ h1{
   font-size: 30px;
 }
 
+h2, h3{
+  text-align: center;
+}
+
 h1::first-letter{
   color: red;
 }
@@ -58,10 +62,50 @@ main{
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
-  padding: 0 60px;
+  padding: 15px 60px;
 }
 
 .card-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.card-game img{
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  transition: all .3s ease-in-out;
+}
+
+.image-container{
+  height: 350px;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid lightgray;
+}
+
+.card-game img:hover{
+  transform: scale(1.1);
+}
+
+.btn{
+  margin-top: 30px;
+  padding: 10px 90px;
+  font-weight: bold;
+  border-radius: 9px;
+  border: none;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: red;
+  color: white;
+}
+
+#rpg + #rts{
+  margin-top: 60px;
 }
