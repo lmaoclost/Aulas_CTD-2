@@ -26,15 +26,6 @@ h1{
   font-size: 30px;
 }
 
-@media (max-width: 492px){
-  header{
-    flex-direction: column;
-  }
-  header h1{
-    margin-bottom: 10px;
-  }
-}
-
 h2, h3{
   text-align: center;
   padding: 15px 0;
@@ -62,20 +53,6 @@ header li a{
   transition: all .3s ease-in-out;
 }
 
-@media(max-width: 344px){
-  header li a{
-    padding: 5px;
-  }
-}
-
-@media(max-width: 300px){
-  header li a {
-    padding: 4px;
-    white-space: nowrap;
-    font-size: 14px;
-  }
-}
-
 header li a:hover{
   background-color: red;
   color: black;
@@ -90,18 +67,6 @@ main{
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
   text-align: center;
-}
-
-@media (max-width: 1030px) {
-  .card-grid{
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 714px){
-  .card-grid{
-    grid-template-columns: 1fr;
-  }
 }
 
 .card-game img{
@@ -139,4 +104,40 @@ main{
 
 #rpg + #rts{
   margin-top: 60px;
+}
+
+/* Responsividade */
+
+@media(min-width: 786px) and (max-width: 1065px){
+  .card-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 785px){
+  .card-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(min-width: 344px) and (max-width: 492px){
+  header{
+    flex-direction: column;
+  }
+  header h1{
+    margin-bottom: 20px;
+  }
+  header li{
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width: 343px){
+  header li a{
+    padding: 5px;
+  }
+
+  main{
+    padding: 15px 30px;
+  }
 }
