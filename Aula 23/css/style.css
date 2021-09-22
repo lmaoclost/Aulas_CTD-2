@@ -5,11 +5,14 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  scroll-padding: 5.625rem;
 }
 
 :root{
-  font-size: 50px;
-  --corDeFundo: black;
+  --corPreta: #242424;
+  --corVermelha: #a70b0b;
+  --corBranca: #dbd8d8;
+  --corCinza: #777474;
 }
 
 body{
@@ -23,28 +26,27 @@ header{
   flex-wrap: wrap;
   position: sticky;
   top: 0;
-  background: var(--corDeFundo);
-  color: white;
-  padding: 20px;
-  font-size: .5rem;
+  background: var(--corPreta);
+  color: var(--corBranca);
+  padding: 1.25rem;
 }
 
 h1{
-  font-size: .5rem;
+  font-size: 1.875rem;
 }
 
 h2, h3{
   text-align: center;
-  padding: 15px 0;
+  padding: 0.9375rem 0;
 }
 
 h1::first-letter{
-  color: red;
+  color: var(--corVermelha);
 }
 
 header ul{
   display: flex;
-  gap: 5px;
+  gap: 0.312rem;
 }
 
 header ul li{
@@ -53,32 +55,26 @@ header ul li{
 
 header li a{
   text-decoration: none;
-  color: white;
-  padding: 0.2rem;
-  border-radius: 9px;
-  font-size: 0.3rem;
+  color: var(--corBranca);
+  padding: .625rem;
+  border-radius: .562rem;
   font-weight: bold;
   transition: all .3s ease-in-out;
 }
 
 header li a:hover{
-  background-color: red;
-  color: black;
-}
-
-main{
-  padding: 15px 60px;
+  background-color: var(--corVermelha);
+  color: var(--corPreta);
 }
 
 #banner{
   background-image: url(https://images7.alphacoders.com/111/1115466.jpg);
-  height: calc(100vh - 81px);
+  height: calc(100vh - 5.06rem);
   background-size: cover;
-  width: 100vw;
 }
 
-#rpg{
-  font-size: 50px;
+main{
+  padding: .937rem 3.75rem;
 }
 
 .card-grid{
@@ -89,16 +85,16 @@ main{
 }
 
 .card-game img{
-  height: 350px;
+  height: 21.875rem;
   width: 100%;
   object-fit: cover;
   transition: all .3s ease-in-out;
 }
 
 .image-container{
-  height: 350px;
+  height: 21.875rem;
   width: 100%;
-  border: 10px groove lightgray;
+  border: 10px groove --corCinza;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -108,7 +104,7 @@ main{
 }
 
 .btn{
-  padding: 10px 90px;
+  padding: .625rem 5.62rem;
   font-weight: bold;
   border-radius: 9px;
   border: none;
@@ -117,12 +113,12 @@ main{
 }
 
 .btn:hover{
-  background-color: red;
-  color: white;
+  background-color: var(--corVermelha);
+  color: var(--corBranca);
 }
 
 #rpg + #rts{
-  margin-top: 60px;
+  margin-top: 3.75rem;
 }
 
 /* Responsividade */
@@ -144,23 +140,19 @@ main{
     flex-direction: column;
   }
   header h1{
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
   header li{
-    margin-bottom: 10px;
+    margin-bottom: .625rem;
   }
 }
 
 @media(max-width: 343px){
   header li a{
-    padding: 5px;
-  }
-
-  #banner{
-    height: calc(100vh - 103px);
+    padding: .312rem;
   }
 
   main{
-    padding: 15px 30px;
+    padding: .93rem 1.875rem;
   }
 }
