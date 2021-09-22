@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root{
+  font-size: 50px;
+  --corDeFundo: black;
+}
+
+body{
+  font-family: 'Manrope', sans-serif;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  background: var(--corDeFundo);
+  color: white;
+  padding: 20px;
+  font-size: .5rem;
+}
+
+h1{
+  font-size: .5rem;
+}
+
+h2, h3{
+  text-align: center;
+  padding: 15px 0;
+}
+
+h1::first-letter{
+  color: red;
+}
+
+header ul{
+  display: flex;
+  gap: 5px;
+}
+
+header ul li{
+  list-style-type: none;
+}
+
+header li a{
+  text-decoration: none;
+  color: white;
+  padding: 0.2rem;
+  border-radius: 9px;
+  font-size: 0.3rem;
+  font-weight: bold;
+  transition: all .3s ease-in-out;
+}
+
+header li a:hover{
+  background-color: red;
+  color: black;
+}
+
+main{
+  padding: 15px 60px;
+}
+
+#banner{
+  background-image: url(https://images7.alphacoders.com/111/1115466.jpg);
+  height: calc(100vh - 81px);
+  background-size: cover;
+  width: 100vw;
+}
+
+#rpg{
+  font-size: 50px;
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.125rem;
+  text-align: center;
+}
+
+.card-game img{
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  transition: all .3s ease-in-out;
+}
+
+.image-container{
+  height: 350px;
+  width: 100%;
+  border: 10px groove lightgray;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-game img:hover{
+  transform: scale(1.1);
+}
+
+.btn{
+  padding: 10px 90px;
+  font-weight: bold;
+  border-radius: 9px;
+  border: none;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: red;
+  color: white;
+}
+
+#rpg + #rts{
+  margin-top: 60px;
+}
+
+/* Responsividade */
+
+@media(min-width: 786px) and (max-width: 1065px){
+  .card-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 785px){
+  .card-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(min-width: 344px) and (max-width: 492px){
+  header{
+    flex-direction: column;
+  }
+  header h1{
+    margin-bottom: 20px;
+  }
+  header li{
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width: 343px){
+  header li a{
+    padding: 5px;
+  }
+
+  #banner{
+    height: calc(100vh - 103px);
+  }
+
+  main{
+    padding: 15px 30px;
+  }
+}
