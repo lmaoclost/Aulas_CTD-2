@@ -16,39 +16,116 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Expand at sm</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">DH Games</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dhItems"
+          aria-controls="dhItems" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExample03">
-        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown03">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form>
-          <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-        </form>
+        <div class="collapse navbar-collapse justify-content-end" id="dhItems">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Inicio da página</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rpg">RPG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rts">RTS</a>
+            </li>
+        </div>
       </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="d-flex flex-column justify-content-center align-items-center" id="banner">
+      <h1>DH Games</h1>
+      <p>Escolha seu jogo e se divirta!</p>
+    </section>
+    <section id="rpg" class="card-grid container text-center">
+      <h2>Jogos de RPG</h2>
+      <div class="row">
+        <div class="card-game mb-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="image-container">
+            <img src="https://upload.wikimedia.org/wikipedia/pt/a/aa/The_Elder_Scrolls_5_Skyrim_capa.png" alt="Skyrim">
+          </div>
+          <h3>The Elder Scrolls V: Skyrim</h3>
+          <a href="#" target="_blank">
+            <button class="btn btn-danger">Trailer</button>
+          </a>
+        </div>
+        <div class="card-game mb-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="image-container">
+            <img
+              src="https://image.api.playstation.com/vulcan/img/cfn/11307XlqDFlHmHWGjBPndSappCDTnE9OmnP2P-dSzcvLX9i0pvH_okJOl6dP1AnZefxthD-2k3RrsdzYU_BqUy9K5_sv-Tnx.png"
+              alt="Persona 5">
+          </div>
+          <h3>Persona 5</h3>
+
+          <a href="#" target="_blank">
+            <button class="btn btn-danger">Trailer</button>
+          </a>
+        </div>
+        <div class="card-game mb-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="image-container">
+            <img
+              src="https://cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_TitanQuest_image1600w.jpg"
+              alt="Titan Quest">
+          </div>
+          <h3>Titan Quest</h3>
+          <a href="#" target="_blank">
+            <button class="btn btn-danger">Trailer</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="rts" class="card-grid container text-center">
+      <h2>Jogos de Estratégia</h2>
+      <div class="row">
+        <div class="card-game mb-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="image-container">
+            <img src="https://bnetcmsus-a.akamaihd.net/cms/blog_header/ci/CIGT53U8ZP6M1509744317189.jpg"
+              alt="Starcraft">
+          </div>
+          <h3>Starcraft</h3>
+          <a href="#" target="_blank">
+            <button class="btn btn-danger">Trailer</button>
+          </a>
+        </div>
+        <div class="card-game mb-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="image-container">
+            <img src="https://sm.ign.com/ign_br/screenshot/default/e3-2021-age-of-empires-iv_r8nj.jpg"
+              alt="Age Of Empires">
+          </div>
+          <h3>Age Of Empires</h3>
+
+          <a href="#" target="_blank">
+            <button class="btn btn-danger">Trailer</button>
+          </a>
+        </div>
+        <div class="card-game mb-4 col-md-4 col-sm-6 col-xs-12">
+          <div class="image-container">
+            <img src="https://warcraft3.com.br/wp-content/uploads/2019/10/warcraft-iii-reforged-1024x576.jpg"
+              alt="Warcraft">
+          </div>
+          <h3>Warcraft</h3>
+          <a href="#" target="_blank">
+            <button class="btn btn-danger">Trailer</button>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer" class="d-flex flex-wrap justify-content-center">
+    <div class="container">
+      <h3>DH Games</h3>
+      DH Games - Todos os direitos reservados
     </div>
-  </nav>
+  </footer>
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"

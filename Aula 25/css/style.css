@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding: 5.625rem;
+}
+
+:root{
+  --corPreta: #242424;
+  --corVermelha: #a70b0b;
+  --corBranca: #dbd8d8;
+  --corCinza: #777474;
+}
+
+.navbar{
+  background-color: black;
+}
+
+.navbar a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.navbar a{
+  font-size: 20px;
+}
+
+.navbar-brand::first-letter{
+  color: red;
+}
+
+#banner{
+  background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190625/ourmid/pngtree-red-flame-burning-game-banner-background-image_259947.jpg);
+  height: calc(100vh - 56px);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+h2,
+h3,
+h4 {
+    font-size: 30px;
+    font-family: 'Manrope', sans-serif;
+}
+
+h3{
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+section>h2 {
+    margin: 60px 0px;
+}
+
+.card-game img{
+  height: 21.875rem;
+  width: 100%;
+  object-fit: cover;
+  transition: all .3s ease-in-out;
+}
+
+.image-container{
+  height: 21.875rem;
+  width: 100%;
+  border: 10px groove --corCinza;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-game img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  padding: 20px;
+  margin-top: 30px;
+  background: red;
+  color: white;
+  width: 100%;
+}
+
+footer h3 {
+  color: white;
+}
+
+footer h3::first-letter {
+  color: black;
+}
+
+footer strong {
+  color: black;
+}
