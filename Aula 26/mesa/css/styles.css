@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: black;
+  color: white;
+  padding: 20px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-radius: 9px;
+  font-weight: bold;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+header ul li a:hover {
+  background-color: red;
+  color: black;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h1::first-letter {
+  color: red;
+}
+
+h2, h3 {
+  text-align: center;
+  padding: 15px 0;
+}
+
+main {
+  padding: 15px 60px;
+}
+
+.card-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+  text-align: center;
+}
+
+.card-game img {
+  height: 350px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.card-game img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.image-container {
+  height: 350px;
+  width: 100%;
+  border: 10px groove lightgray;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.btn {
+  padding: 10px 90px;
+  font-weight: bold;
+  border-radius: 9px;
+  border: none;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: red;
+  color: white;
+}
+
+#rpg + #rts {
+  margin-top: 60px;
+}
+
+/* Responsividade */
+@media (min-width: 786px) and (max-width: 1065px) {
+  .card-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 785px) {
+  .card-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 344px) and (max-width: 492px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header h1 {
+    margin-bottom: 20px;
+  }
+  header li {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 343px) {
+  header li a {
+    padding: 5px;
+  }
+  main {
+    padding: 15px 30px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

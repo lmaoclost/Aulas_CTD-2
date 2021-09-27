@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Manrope', sans-serif;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  background: black;
+  color: white;
+  padding: 20px;
+
+  ul{
+    display: flex;
+    gap: 5px;
+
+    li{
+      list-style-type: none;
+
+      a{
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        border-radius: 9px;
+        font-weight: bold;
+        transition: all .3s ease-in-out;
+
+        &:hover{
+          background-color: red;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+h1{
+  font-size: 30px;
+
+  &::first-letter{
+    color: red;
+  }
+}
+
+h2, h3{
+  text-align: center;
+  padding: 15px 0;
+}
+
+main{
+  padding: 15px 60px;
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+  text-align: center;
+}
+
+.card-game img{
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  transition: all .3s ease-in-out;
+
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+.image-container{
+  height: 350px;
+  width: 100%;
+  border: 10px groove lightgray;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.btn{
+  padding: 10px 90px;
+  font-weight: bold;
+  border-radius: 9px;
+  border: none;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+
+  &:hover{
+    background-color: red;
+    color: white;
+  }
+}
+
+#rpg + #rts{
+  margin-top: 60px;
+}
+
+/* Responsividade */
+
+@media(min-width: 786px) and (max-width: 1065px){
+  .card-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 785px){
+  .card-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(min-width: 344px) and (max-width: 492px){
+  header{
+    flex-direction: column;
+    h1{
+      margin-bottom: 20px;
+    }
+    li{
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media(max-width: 343px){
+  header li a{
+    padding: 5px;
+  }
+
+  main{
+    padding: 15px 30px;
+  }
+}
