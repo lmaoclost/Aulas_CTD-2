@@ -1,4 +1,4 @@
-#header {
+header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,33 +14,34 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background: #16162a;
+  background-color: black;
 }
 
-#header h1 {
+header h1 {
   font-size: 30px;
 }
 
-#header h1::first-letter {
-  color: #d65454;
+header h1::first-letter {
+  color: red;
 }
 
-#header h1:hover {
-  color: #6262c7;
+header h1:hover {
+  color: blue;
 }
 
-#header ul {
+header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 5px;
+  margin: 16px 0;
 }
 
-#header ul li {
+header ul li {
   list-style-type: none;
 }
 
-#header ul li a {
+header ul li a {
   text-decoration: none;
   color: white;
   padding: 10px;
@@ -50,24 +51,24 @@
   transition: all .3s ease-in-out;
 }
 
-#header ul li a:hover {
-  background-color: #d65454;
-  color: #16162a;
+header ul li a:hover {
+  background: red;
+  color: black;
 }
 
 .btn-info {
-  background: #dedede;
+  background: gray;
 }
 
 .btn-danger {
-  background: #d65454;
+  background: red;
 }
 
 article {
-  background-color: #dedede;
+  background-color: gray;
 }
 
 article + article {
   margin-top: 30px;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
