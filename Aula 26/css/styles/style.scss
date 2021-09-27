@@ -1,0 +1,62 @@
+@import '../colors/colors.scss';
+
+#header{
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  background: $black;
+
+  h1{
+    font-size: 30px;
+
+    &::first-letter{
+      color: $red;
+    }
+    &:hover{
+      color: $blue;
+    }
+  }
+
+  ul{
+    display: flex;
+    gap: 5px;
+
+    li{
+      list-style-type: none;
+
+      a{
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        border-radius: 9px;
+        font-weight: bold;
+        transition: all .3s ease-in-out;
+
+        &:hover{
+          background-color: $red;
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+.btn{
+  &-info{
+    background: $gray;
+  }
+  &-danger{
+    background: $red;
+  }
+}
+
+article{
+  background-color: $gray;
+  +article{
+    margin-top: 30px;
+  }
+}
