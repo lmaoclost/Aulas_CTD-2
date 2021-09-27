@@ -1,3 +1,5 @@
+@import '../colors/colors.scss';
+
 header{
   display: flex;
   position: sticky;
@@ -6,16 +8,16 @@ header{
   padding: 20px;
   align-items: center;
   flex-wrap: wrap;
-  background-color: black;
+  background-color: $black;
 
   h1{
     font-size: 30px;
 
     &::first-letter{
-      color: red;
+      color: $red;
     }
     &:hover{
-      color: blue;
+      color: $blue;
     }
   }
 
@@ -36,8 +38,8 @@ header{
         transition: all .3s ease-in-out;
 
         &:hover{
-          background: red;
-          color: black;
+          background: $red;
+          color: $black;
         }
       }
     }
@@ -46,15 +48,15 @@ header{
 
 .btn{
   &-info{
-    background: gray;
+    background: $gray;
   }
   &-danger{
-    background: red;
+    background: $red;
   }
 }
 
 article{
-  background-color: gray;
+  background-color: $gray;
   +article{
     margin-top: 30px;
   }

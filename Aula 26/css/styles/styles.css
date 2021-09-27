@@ -14,7 +14,7 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: black;
+  background-color: #16162a;
 }
 
 header h1 {
@@ -22,11 +22,11 @@ header h1 {
 }
 
 header h1::first-letter {
-  color: red;
+  color: #d65454;
 }
 
 header h1:hover {
-  color: blue;
+  color: #6262c7;
 }
 
 header ul {
@@ -52,20 +52,20 @@ header ul li a {
 }
 
 header ul li a:hover {
-  background: red;
-  color: black;
+  background: #d65454;
+  color: #16162a;
 }
 
 .btn-info {
-  background: gray;
+  background: #dedede;
 }
 
 .btn-danger {
-  background: red;
+  background: #d65454;
 }
 
 article {
-  background-color: gray;
+  background-color: #dedede;
 }
 
 article + article {
