@@ -20,19 +20,20 @@ header{
   background: black;
   color: white;
   padding: 20px;
+  z-index: 999;
 }
 
 h1{
   font-size: 30px;
 }
 
+h1::first-letter{
+  color: red;
+}
+
 h2, h3{
   text-align: center;
   padding: 15px 0;
-}
-
-h1::first-letter{
-  color: red;
 }
 
 header ul{
