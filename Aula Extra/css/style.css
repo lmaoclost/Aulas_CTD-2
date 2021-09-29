@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 * {
   scroll-padding: 3.5rem;
 }
@@ -6,31 +7,20 @@
   background-image: url("https://www.digitalhouse.com/br/assets/imgs/home/financiamento-isa:-comece-o-seu-curso-e-pague-quando-puder!.jpg");
   background-size: cover;
   background-attachment: fixed;
-  color: white;
 }
 
 #banner .banner-text {
+  color: white;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
           filter: drop-shadow(5px 5px 5px #222);
 }
 
 #banner .banner-text h2 {
-  font-size: 40px;
+  font-size: 50px;
 }
 
 #banner .banner-text p {
   font-size: 20px;
-}
-
-#cursos .btn-color {
-  background-color: purple;
-  color: white;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-}
-
-#cursos .btn-color:hover {
-  background-color: rgba(128, 0, 128, 0.603);
 }
 
 #form {
@@ -40,10 +30,14 @@
 }
 
 #form h2, #form h3 {
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+          filter: drop-shadow(5px 5px 5px #222);
   color: white;
 }
 
-#form input[type="checkbox"] {
-  color: white;
+@media (max-width: 450px) {
+  .banner-text h2 {
+    font-size: 30px !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
