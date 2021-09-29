@@ -1,0 +1,43 @@
+*{
+  scroll-padding: 3.5rem;
+}
+
+#banner{
+  background-image: url("https://www.digitalhouse.com/br/assets/imgs/home/financiamento-isa:-comece-o-seu-curso-e-pague-quando-puder!.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  .banner-text{
+    filter: drop-shadow(5px 5px 5px #222);
+    h2{
+      font-size: 40px;
+    }
+    p{
+      font-size: 20px;
+    }
+  }
+}
+
+#cursos{
+  .btn-color{
+    background-color: purple;
+    color: white;
+    transition: all .3s ease-in-out;
+    
+    &:hover{
+      background-color: rgba(128, 0, 128, 0.603);
+    }
+  }
+}
+
+#form{
+  background-image: url("https://images3.alphacoders.com/954/thumb-1920-954241.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  h2,h3{
+    color: white;
+  }
+  input[type="checkbox"]{
+    color: white;
+  }
+}
