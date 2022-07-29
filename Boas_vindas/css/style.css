@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding: 5.625rem;
+}
+
+:root{
+  --corPreta: #242424;
+  --corVermelha: #a70b0b;
+  --corBranca: #dbd8d8;
+  --corCinza: #777474;
+}
+
+body{
+  font-family: 'Manrope', sans-serif;
+}
+
+header{
+  display: initial;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  background: var(--corPreta);
+  color: var(--corBranca);
+  padding: 1.25rem;
+}
+
+h1{
+  font-size: 1.875rem;
+}
+
+h2, h3{
+  text-align: center;
+  padding: 0.9375rem 0;
+}
+
+h1::first-letter{
+  color: var(--corVermelha);
+}
+
+header ul{
+  display: flex;
+  gap: 0.312rem;
+}
+
+header ul li{
+  list-style-type: none;
+}
+
+header li a{
+  text-decoration: none;
+  color: var(--corBranca);
+  padding: .625rem;
+  border-radius: .562rem;
+  font-weight: bold;
+  transition: all .3s ease-in-out;
+}
+
+header li a:hover{
+  background-color: var(--corVermelha);
+  color: var(--corPreta);
+}
+
+#banner{
+  background-image: url(https://images7.alphacoders.com/111/1115466.jpg);
+  height: calc(100vh - 5.06rem);
+  background-size: cover;
+}
+
+main{
+  padding: .937rem 3.75rem;
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.125rem;
+  text-align: center;
+}
+
+.card-game img{
+  height: 21.875rem;
+  width: 100%;
+  object-fit: cover;
+  transition: all .3s ease-in-out;
+}
+
+.image-container{
+  height: 21.875rem;
+  width: 100%;
+  border: 10px groove --corCinza;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-game img:hover{
+  transform: scale(1.1);
+}
+
+.btn{
+  padding: .625rem 5.62rem;
+  font-weight: bold;
+  border-radius: 9px;
+  border: none;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background-color: var(--corVermelha);
+  color: var(--corBranca);
+}
+
+#rpg + #rts{
+  margin-top: 3.75rem;
+}
+
+/* Responsividade */
+
+@media(min-width: 786px) and (max-width: 1065px){
+  .card-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 785px){
+  .card-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(min-width: 344px) and (max-width: 492px){
+  header{
+    flex-direction: column;
+  }
+  header h1{
+    margin-bottom: 1.25rem;
+  }
+  header li{
+    margin-bottom: .625rem;
+  }
+}
+
+@media(max-width: 343px){
+  header li a{
+    padding: .312rem;
+  }
+
+  main{
+    padding: .93rem 1.875rem;
+  }
+}
